@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>按钮（Button）插件</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<button class="btn btn-primary" id="fat-btn" data-loading-text="Loading">加载状态</button>
+
+	<script type="text/javascript">
+		$(function(){
+			$(".btn").click(function(){
+				$(this).button('loading').delay(500).queue(function(){
+					$(this).button('reset');
+					$(this).dequeue();
+				});
+			});
+		});
+	</script>
+</body>
+</html>

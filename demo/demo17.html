@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<title>工具提示插件</title>
+		<style type="text/css">
+			a:focus{
+				outline: none;
+			}
+		</style>
+	</head>
+	<body style="margin: 100px;">
+		<a href="" title="超文本标识符" data-toggle="tooltip">HTML</a>
+		
+		<button class="btn btn-default">按钮</button>
+	
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script type="text/javascript">
+		$('a').tooltip({
+			trigger:'click'
+		});
+		$('button').on('click',function(){
+//			$('a').tooltip('show');
+			$('a').tooltip('toggle');
+		});
+		
+		$('a').on('show.bs.tooltip',function(){
+			alert('显示前触发');
+		});
+	</script>
+	</body>
+</html>

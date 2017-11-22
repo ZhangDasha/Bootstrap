@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/demo1.css"/>
+		<title>项目实战</title>
+	</head>
+	<body>
+		<!--导航栏-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="" class="navbar-brand logo">品牌logo</a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+					<ul class="nav navbar-nav navbar-right " >
+						<li class="active"><a href="demo23.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+						<li><a href="information.html"><span class="glyphicon glyphicon-list"></span> 咨询</a></li>
+						<li><a href="case.html"><span class="glyphicon glyphicon-fire"></span> 案列</a></li>
+						<li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
+				    </ul>
+				</div>
+				
+			</div>
+		</nav>
+		
+		<!--图片轮播-->
+		<div id="myCarousel" class="carousel slide">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="image/xmad_15005601089225_yftMm.jpg"/>
+				</div>
+				<div class="item">
+					<img src="image/xmad_14992333906394_OKPHW.jpg"/>
+				</div>
+				<div class="item">
+					<img src="image/xmad_14975247183613_vhzSE.jpg"/>
+				</div>
+			</div>
+			<a href="#myCarousel" data-slide="prev" class="carousel-control left">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a href="#myCarousel" data-slide="next" class="carousel-control right">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+	
+		<!--网页内容介绍-->
+		<div class="tab1" >
+			<div class="container" >
+				<h2 class="tab1-h2">大傻不傻</h2>
+				<p class="tab1-p">大傻桃式是《火影忍者剧场版：博人传》的最终BOSS。</p>
+				
+				<div class="row" >
+					<div class="col-md-6 col" >
+						<div class="media">
+							<div class="media-left">
+								<a href=""><img src="image/1.jpg" class="media-object"></a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">课程内容</h4>
+								<p class="text-muted">大筒木桃式和大筒木舍人</p>
+								<p>打算毁灭地球，后来被漩涡鸣人打败并洗白</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col">
+						<div class="media">
+							<div class="media-left">
+								<a href=""><img src="image/2.jpg" class="media-object"></a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">课程内容</h4>
+								<p class="text-muted">大筒木桃式和大筒木舍人</p>
+								<p>打算毁灭地球，后来被漩涡鸣人打败并洗白</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col">
+						<div class="media">
+							<div class="media-left">
+								<a href=""><img src="image/3.jpg" class="media-object"></a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">课程内容</h4>
+								<p class="text-muted">大筒木桃式和大筒木舍人</p>
+								<p>打算毁灭地球，后来被漩涡鸣人打败并洗白</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col">
+						<div class="media">
+							<div class="media-left">
+								<a href=""><img src="image/4.jpg" class="media-object"></a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">课程内容</h4>
+								<p class="text-muted">大筒木桃式和大筒木舍人</p>
+								<p>打算毁灭地球，后来被漩涡鸣人打败并洗白</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<div class="container">
+				<p>版权所有：大傻</p>
+				<p>京ICP 备546798</p>
+			</div>
+		</div>
+		
+				
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script type="text/javascript">
+		$(function(){
+			
+			//轮播自动播放
+			$('#myCarousel').carousel({
+				interval : 3000,
+			});
+			
+			//设置垂直居中
+			/*
+			$('.carousel-control').css('line-height',$('.carousel-inner img').height()+'px');
+			$(window).resize(function(){
+				var $height = $('.carousel-inner img').eq(0).height()  ||
+							  $('.carousel-inner img').eq(1).height()  ||
+							  $('.carousel-inner img').eq(2).height() ;
+				$('.carousel-control').css('line-height',$height+'px');
+				
+			});*/
+		});
+	</script>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap 实例 - 工具提示（Tooltip）插件</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<h4>工具提示（Tooltip）插件 - 锚</h4>
+	<a href="#" data-toggle="tooltip" title="默认tooltip">默认tooltip</a>
+	<a href="#" data-toggle="tooltip" data-placement="left" title="左侧的tooltip">左侧的tooltip</a>
+	<a href="#" data-toggle="tooltip" data-placement="right" title="右侧的tooltip">右侧的tooltip</a>
+	<a href="#" data-toggle="tooltip" data-placement="top" title="上侧的tooltip">上侧的tooltip</a>
+	<a href="#" data-toggle="tooltip" data-placement="botton" title="下侧的tooltip">下侧的tooltip</a>
+	<br>
+	<h4>工具提示（Tooltip）插件 - 按</h4>
+	<button class="btn btn-info" data-toggle="tooltip" title="默认tooltip">默认tooltip</button>
+	<button class="btn btn-info" data-toggle="tooltip" title="左侧的tooltip" data-placement="left">默认tooltip</button>
+	<button class="btn btn-info" data-toggle="tooltip" title="右侧的tooltip" data-placement="right">默认tooltip</button>
+	<button class="btn btn-info" data-toggle="tooltip" title="上侧的tooltip" data-placement="top">默认tooltip</button>
+	<button class="btn btn-info" data-toggle="tooltip" title="下侧的tooltip" data-placement="botton">默认tooltip</button>
+
+
+
+
+
+<script type="text/javascript">
+	$(function(){
+		$("[data-toggle='tooltip']").tooltip();
+	});
+</script>
+</body>
+</html>

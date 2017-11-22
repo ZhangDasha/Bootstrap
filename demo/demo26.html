@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>向输入域前面或后面添加文本</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div style="padding: 100px 100px 10px;">
+		<form class="bs-example bs-example-form" role='form'>
+			<div class="input-group">
+				<span class="input-group-addon">@</span>
+				<input type="text" class="form-control" placeholder="UserName">
+			</div>
+			<br>
+			<div class="input-group">
+				<input type="text" class="form-control">
+				<span class="input-group-addon"><input type="checkbox"></span>
+			</div>
+			<br>
+			<div class="input-group">
+				<input type="text" class="form-control" name="ip1">
+				<label class="input-group-addon" for='ip1'>$</label> 
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-btn"><button class="btn btn-success">ok</button></span>
+				<input type="text" class="form-control">
+			</div>
+			<br>
+			<div class="input-group">
+				<div class="input-group-btn">
+					<button class="btn btn-default dropdown-toggle" data-toggle='dropdown'>下拉
+					<span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="#">C</a></li>
+						<li><a href="#">C++</a></li>
+						<li><a href="#">C#</a></li>
+					</ul>
+				</div>
+				<input type="text" class="form-control">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<title>下拉菜单与滚动监听插件</title>
+	</head>
+	<body>
+		<!--
+			下拉菜单
+			申明式的关键核心：
+			1.外围容器使用class="dropdown" 包裹
+			2.内部点击按钮事件绑定data-toggle="dropdown"
+			3.菜单元素使用class="dropdown-menu".
+			如果按钮在容器外部，可以通过data-targgle进行绑定
+		-->
+		<div class="dropdown">
+			<button class="btn btn-primary" data-toggle="dropdown">
+				下拉菜单
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+			</ul>
+		</div>
+		
+		
+		<!--滚动监听-->
+		<nav class="navbar navbar-default">
+			<a href="#" class="navbar-brand">web开发</a>
+			<ul class="nav navbar-nav">
+				<li><a href="#1">1</a></li>
+				<li><a href="#2">2</a></li>
+				<li class="dropdown">
+					<a href="" data-toggle="dropdown">3 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#3">11</a></li>
+						<li><a href="">22</a></li>
+						<li><a href="">33</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div style="padding:0 20px; height: 200px; overflow: auto;position: relative;" data-spy="scroll">
+			<h4 id="1">1</h4>
+			<p>如果使用 show 选项，当初始化的时候则会显示模态窗口。它的类型是 boolean，默认值是 true。如果把 show 选项的值设置为 false，在初始化时不会显示模态窗口。如果您把"使用 JavaScript"实例中行号 2 的代码替换为下面的代码，即给 show 选项赋值为 false，在初始化时不会显示模态窗口。如果使用 show 选项，当初始化的时候则会显示模态窗口。它的类型是 boolean，默认值是 true。如果把 show 选项的值设置为 false，在初始化时不会显示模态窗口。如果您把"使用 JavaScript"实例中行号 2 的代码替换为下面的代码，即给 show 选项赋值为 false，在初始化时不会显示模态窗口。Bootstrap Modals（模态框）是使用定制的 Jquery 插件创建的。它可以用来创建模态窗口丰富用户体验，或者为用户添加实用功能。您可以在 Modals（模态框）中使用 Popover（弹出框）和 Tooltip（工具提示插件）。在本教程中，将通过一些实例和解释来讨论如何使用 Bootstrap 创建模态窗口。同时，我们也会讨论用于定制的各种可用选项。</p>
+			<h4 id="2">2</h4>
+			<p>如果使用 show 选项，当初始化的时候则会显示模态窗口。它的类型是 boolean，默认值是 true。如果把 show 选项的值设置为 false，在初始化时不会显示模态窗口。如果您把"使用 JavaScript"实例中行号 2 的代码替换为下面的代码，即给 show 选项赋值为 false，在初始化时不会显示模态窗口。如果使用 show 选项，当初始化的时候则会显示模态窗口。它的类型是 boolean，默认值是 true。如果把 show 选项的值设置为 false，在初始化时不会显示模态窗口。如果您把"使用 JavaScript"实例中行号 2 的代码替换为下面的代码，即给 show 选项赋值为 false，在初始化时不会显示模态窗口。Bootstrap Modals（模态框）是使用定制的 Jquery 插件创建的。它可以用来创建模态窗口丰富用户体验，或者为用户添加实用功能。您可以在 Modals（模态框）中使用 Popover（弹出框）和 Tooltip（工具提示插件）。在本教程中，将通过一些实例和解释来讨论如何使用 Bootstrap 创建模态窗口。同时，我们也会讨论用于定制的各种可用选项。</p>
+			<h4 id="3">3</h4>
+			<p>如果使用 show 选项，当初始化的时候则会显示模态窗口。它的类型是 boolean，默认值是 true。如果把 show 选项的值设置为 false，在初始化时不会显示模态窗口。如果您把"使用 JavaScript"实例中行号 2 的代码替换为下面的代码，即给 show 选项赋值为 false，在初始化时不会显示模态窗口。如果使用 show 选项，当初始化的时候则会显示模态窗口。它的类型是 boolean，默认值是 true。如果把 show 选项的值设置为 false，在初始化时不会显示模态窗口。如果您把"使用 JavaScript"实例中行号 2 的代码替换为下面的代码，即给 show 选项赋值为 false，在初始化时不会显示模态窗口。Bootstrap Modals（模态框）是使用定制的 Jquery 插件创建的。它可以用来创建模态窗口丰富用户体验，或者为用户添加实用功能。您可以在 Modals（模态框）中使用 Popover（弹出框）和 Tooltip（工具提示插件）。在本教程中，将通过一些实例和解释来讨论如何使用 Bootstrap 创建模态窗口。同时，我们也会讨论用于定制的各种可用选项。</p>
+		</div>
+		
+		
+		
+	
+	<script src="js/jquery-3.1.1.min.js">
+	</script>
+	<script src="js/bootstrap.min.js"></script>	
+	</body>
+</html>

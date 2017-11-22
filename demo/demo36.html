@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹出框（Popover）插件</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container" style="padding: 100px 200px 40px">
+		<button type="button" class="btn btn-default" title="Popover Title" data-container="body" data-toggle="popover" data-placement="left" data-content="左侧的 Popover 中的一些内容">左部的 Popove</button>
+		<button type="button" class="btn btn-info" title="Popover Title" data-container="body" data-toggle="popover" data-placement="top" data-content="上侧的 Popover 中的一些内容">顶部的 Popove</button>
+		<button type="button" class="btn btn-primary" data-toggle="popover" title="Popover Title" data-container="body" data-placement="bottom" data-content="下侧的 Popover 中的一些内容">下侧的 Popover 中的一些内容</button>
+		<button type="button" class="btn btn-warning" data-toggle="popover" title="Popover Title" data-container="body" data-placement="right" data-content="右侧的 Popover 中的一些内容">右侧的 Popover 中的一些内容</button>
+
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$("[data-toggle='popover']").popover();
+		});
+	</script>
+</body>
+</html>
